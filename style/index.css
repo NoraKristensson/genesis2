@@ -1,0 +1,263 @@
+body {
+  height: 3840px;
+  width: 1360px;
+  margin: 0;
+
+  padding-left: 126px;
+  padding-right: 124px;
+  padding-top: 61px;
+
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+}
+/* --------------------------------------------------------header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding-left: 29px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  letter-spacing: -0.346154px;
+
+  color: #111111;
+}
+
+li:hover {
+  font-size: 24px;
+  color: rgb(138, 138, 143);
+}
+/* --------------------------------------------------------title */
+
+.text-top {
+  padding-bottom: 144px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.title {
+  width: 635px;
+  height: 251px;
+  margin-top: 96px;
+}
+
+.titleblue {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.423077px;
+  color: #4a4ff2;
+}
+
+.title-black {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  color: #111111;
+}
+
+.titleblue--big {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.quote-border {
+  width: 30px;
+  height: 2px;
+  background: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.right-quote {
+  padding-right: 74px;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #111111;
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+/* ----------------------------------------------------------------------grid-container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(32, 1fr);
+  grid-row-gap: 20px;
+
+  /* grid-column-gap: 23px; ++++++++++++++++++++the code doesn't work*/
+}
+
+/* -------------------------first column */
+
+.dancing {
+  grid-area: 1/1/8/4;
+}
+
+.ballon {
+  grid-area: 8/1/16/4;
+}
+
+.moon {
+  grid-area: 16/1/24/4;
+}
+
+.flowers {
+  grid-area: 24/1/33/5;
+}
+
+/* -------------------------second column */
+
+.thinking {
+  grid-area: 1/4/7/7;
+}
+
+.statue {
+  grid-area: 7/4/14/7;
+}
+
+.walking {
+  grid-area: 14/4/23/7;
+}
+
+.sunset {
+  grid-area: 23/4/33/7;
+}
+
+/* -------------------------third column */
+
+.sleeping {
+  grid-area: 1/7/11/10;
+}
+
+.silver {
+  grid-area: 11/7/18/10;
+}
+
+.piano {
+  grid-area: 18/7/27/10;
+}
+
+.green {
+  grid-area: 27/7/33/10;
+}
+
+/* ----------------------------------------------------------------------text-bottom */
+
+.text-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 91px;
+}
+
+.heading-bottom {
+  width: 635px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  color: #111111;
+  margin: 0;
+}
+
+.table-grey {
+  width: 349px;
+  padding-top: 8px;
+}
+.tabletada {
+  color: #111111;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.tabledata--small {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* ----------------------------------------------------------------------award */
+
+.award {
+  width: 1110px;
+  height: 411px;
+  display: flex;
+
+  justify-content: space-between;
+
+  border: solid green 1px;
+}
+
+.award-left {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  /* align-content: space-between; */
+  border: solid blue 1px;
+}
+.second-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid red 1px;
+}
+
+.third-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid pink 1px;
+}
+
+.text-fc {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.second-column {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.third-column {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* --------------------------------------------------- */
+
+.test {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vänster {
+  width: 635px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
