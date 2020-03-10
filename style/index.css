@@ -332,11 +332,4 @@ nav {
   margin-left: 23px;
   min-width: 18px;
   min-height: 15px;
-  transition-property: ;
-}
-
-/* ------------cant get the icons to hover */
-.footerlogo:hover {
-  cursor: grab;
-  fill: red;
 }
