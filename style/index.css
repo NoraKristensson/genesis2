@@ -12,7 +12,8 @@ body {
   font-weight: normal;
 }
 /* --------------------------------------------------------header */
-header {
+header,
+footer {
   display: flex;
   justify-content: space-between;
 }
@@ -37,6 +38,7 @@ li {
 li:hover {
   font-size: 24px;
   color: rgb(138, 138, 143);
+  cursor: grab;
 }
 /* --------------------------------------------------------title */
 
@@ -104,62 +106,73 @@ li:hover {
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(32, 1fr);
   grid-row-gap: 20px;
-
-  /* grid-column-gap: 23px; ++++++++++++++++++++the code doesn't work*/
+  grid-column-gap: 23px;
 }
 
 /* -------------------------first column */
 
 .dancing {
   grid-area: 1/1/8/4;
+  width: 100%;
 }
 
 .ballon {
   grid-area: 8/1/16/4;
+  width: 100%;
 }
 
 .moon {
   grid-area: 16/1/24/4;
+  width: 100%;
 }
 
 .flowers {
-  grid-area: 24/1/33/5;
+  grid-area: 24/1/33/4;
+  width: 100%;
 }
 
 /* -------------------------second column */
 
 .thinking {
   grid-area: 1/4/7/7;
+  width: 100%;
 }
 
 .statue {
   grid-area: 7/4/14/7;
+  width: 100%;
 }
 
 .walking {
   grid-area: 14/4/23/7;
+  width: 100%;
 }
 
 .sunset {
   grid-area: 23/4/33/7;
+  width: 100%;
 }
 
 /* -------------------------third column */
 
 .sleeping {
   grid-area: 1/7/11/10;
+  width: 100%;
 }
 
 .silver {
   grid-area: 11/7/18/10;
+  width: 100%;
 }
 
 .piano {
   grid-area: 18/7/27/10;
+  width: 100%;
 }
 
 .green {
   grid-area: 27/7/33/10;
+  width: 100%;
 }
 
 /* ----------------------------------------------------------------------text-bottom */
@@ -168,6 +181,7 @@ li:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 91px;
+  margin-bottom: 151px;
 }
 
 .heading-bottom {
@@ -197,67 +211,132 @@ li:hover {
 /* ----------------------------------------------------------------------award */
 
 .award {
-  width: 1110px;
-  height: 411px;
-  display: flex;
-
-  justify-content: space-between;
-
-  border: solid green 1px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  /* grid-row-gap: 20px;
+  grid-column-gap: 23px; */
 }
 
-.award-left {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  /* align-content: space-between; */
-  border: solid blue 1px;
-}
-.second-column {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  border: solid red 1px;
-}
-
-.third-column {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  border: solid pink 1px;
-}
-
-.text-fc {
+.mainheading {
   font-weight: bold;
   font-size: 22px;
   line-height: 28px;
+  color: #111111;
 }
 
-.second-column {
+.heading {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  color: #111111;
+  text-align: end;
 }
 
-.third-column {
+.smallheading {
   font-size: 16px;
   line-height: 20px;
+  color: #111111;
+  text-align: end;
 }
 
-/* --------------------------------------------------- */
-
-.test {
-  width: 1110px;
-  display: flex;
-  justify-content: space-between;
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(17, 17, 17, 0.6);
+  mix-blend-mode: normal;
+  text-align: end;
+  text-align: left;
+  padding-right: 38px;
 }
 
-.vänster {
-  width: 635px;
+.year {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-align: end;
+}
+
+/* -------grid award-------- */
+
+/* -- first column --*/
+.mainheading--1 {
+  grid-area: 1/1/2/3;
+}
+
+.mainheading--2 {
+  grid-area: 6/1/7/4;
+}
+/* -- second column --*/
+.heading--1 {
+  grid-area: 1/6/2/8;
+}
+
+.heading--2 {
+  grid-area: 3/6/4/8;
+}
+
+.heading--3 {
+  grid-area: 6/6/7/8;
+}
+
+.heading--4 {
+  grid-area: 8/6/9/8;
+}
+/* -- third column --*/
+.text--1 {
+  grid-area: 1/9/3/11;
+}
+
+.text--2 {
+  grid-area: 3/9/5/11;
+}
+
+.text--3 {
+  grid-area: 6/9/8/11;
+}
+
+.text--4 {
+  grid-area: 8/9/10/11;
+}
+/* -- fourth column --*/
+.year--1 {
+  grid-area: 1/12/2/13;
+}
+
+.year--2 {
+  grid-area: 3/12/4/13;
+}
+
+.year--3 {
+  grid-area: 6/12/7/13;
+}
+
+.year--4 {
+  grid-area: 8/12/9/13;
+}
+
+/* --------------------------------------------------------------------footer */
+
+nav {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.logos {
+  margin-left: 95px;
+  margin-top: 14px;
+}
+
+.footerlogo {
+  margin-left: 23px;
+  min-width: 18px;
+  min-height: 15px;
+  transition-property: ;
+}
+
+/* ------------cant get the icons to hover */
+.footerlogo:hover {
+  cursor: grab;
+  fill: red;
 }
